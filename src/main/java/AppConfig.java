@@ -15,7 +15,7 @@ import java.util.Calendar;
 @ComponentScan({"in.bearly"})
 public class AppConfig {
 
-    @Bean(name= "cal")
+    @Bean(name = "cal")
     public CalendarFactory calFactory(){
         CalendarFactory factory = new CalendarFactory();
         factory.addDays(2);
