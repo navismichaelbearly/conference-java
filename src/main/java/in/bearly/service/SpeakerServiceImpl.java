@@ -4,12 +4,14 @@ import in.bearly.model.Speaker;
 import in.bearly.repository.HibernateSpeakerRepositoryImpl;
 import in.bearly.repository.SpeakerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Service("speakerService")
+@Profile("dev")
 public class SpeakerServiceImpl implements SpeakerService {
 
     private SpeakerRepository repository;
